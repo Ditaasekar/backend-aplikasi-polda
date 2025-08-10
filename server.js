@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use('/api/laporan', require('./laporanRoutes'));
+app.use('/api/laporan', require('./LaporanRoutes'));
 
 const PORT = process.env.PORT || 5000;
 
@@ -21,5 +21,6 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = app;
+
 
 
