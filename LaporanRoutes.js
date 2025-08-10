@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Laporan = require('../Laporan');
+const Laporan = require('./Laporan');
 
 // CREATE
 router.post('/', async (req, res) => {
@@ -55,4 +55,5 @@ router.delete('/:id', async (req, res) => {
 });
 
 module.exports = router;
+
 
