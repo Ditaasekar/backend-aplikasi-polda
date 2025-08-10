@@ -1,5 +1,5 @@
 const express = require('express');
-const connectDB = require('./config/db');
+const connectDB = require('./db');
 require('dotenv').config();
 const cors = require('cors');
 
@@ -21,3 +21,4 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = app;
+
