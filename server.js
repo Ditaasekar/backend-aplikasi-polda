@@ -35,7 +35,7 @@ app.get('/health', (req, res) => {
 });
 
 // Routes (comment dulu sampai fix)
-// app.use('/api/laporan', require('./LaporanRoutes'));
+app.use('/api/laporan', require('./LaporanRoutes'));
 
 const PORT = process.env.PORT || 5000;
 
@@ -46,3 +46,4 @@ app.listen(PORT, '0.0.0.0', () => {
 });
 
 module.exports = app;
+
