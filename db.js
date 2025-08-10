@@ -5,8 +5,6 @@ const cors = require('cors');
 
 const app = express();
 
-// Connect to database
-connectDB();
 
 // Middleware
 app.use(cors());
@@ -29,4 +27,4 @@ app.listen(PORT, '0.0.0.0', () => {
 });
 
 module.exports = app;
-module.exports = app;
+
