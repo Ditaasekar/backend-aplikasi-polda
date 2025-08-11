@@ -8,7 +8,7 @@ const app = express();
 // Database connection
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/aplikasi_polda');
+    const conn = await mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/aplikasi_polda');
     console.log(`✅ MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
     console.error('❌ Database connection failed:', error.message);
@@ -46,4 +46,5 @@ app.listen(PORT, '0.0.0.0', () => {
 });
 
 module.exports = app;
+
 
